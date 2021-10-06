@@ -1,5 +1,5 @@
 <?php
-    require_once 'C:\xampp\htdocs\AtivsPHP\TII2002T-03\Gabriel\SA-03-CRUD-OOP\Especialidade\Especialidade.php';
+    require_once '../Especialidade.php';
     $e = new Especialidade();
 ?>
 
@@ -33,13 +33,13 @@
         
     </table>
     <br><br>
-    <button><a href="">Cadastrar Especialidade</a></button>
+    <button><a href="../CadastroEspecialidade/CadastroEspecialidade.php">Cadastrar Especialidade</a></button>
     <br>
     <br>
-    <button><a href="DeletarEspecialidade/DeletarEspecialidade.php">Apagar Especialidade</a></button>
+    <button><a href="../DeletarEspecialidade/DeletarEspecialidade.php">Apagar Especialidade</a></button>
     <br>
     <br>
-    <button><a href="AtualizarEspecialidade/AtualizarEspecialidade.php">Atualizar Especialidade</a></button>
+    <button><a href="../AtualizarEspecialidade/AtualizarEspecialidade.php">Atualizar Especialidade</a></button>
 
     </center>
 

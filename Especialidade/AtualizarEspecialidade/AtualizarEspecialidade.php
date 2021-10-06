@@ -1,5 +1,5 @@
 <?php
-    require_once 'C:\xampp\htdocs\AtivsPHP\TII2002T-03\Gabriel\SA-03-CRUD-OOP\Especialidade\Especialidade.php';
+    require_once '../Especialidade.php';
     $e = new Especialidade();
 ?>
 
