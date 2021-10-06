@@ -1,0 +1,18 @@
+p {
+    font-size: 20px;
+}
+
+#botaodelmedico {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    width: 135px;
+    height: 28px;
+    font-size: 15px;
+}
+
+input {
+    text-align: center;
+    width: 180px;
+    height: 20px;
+    font-size: 15px;
+}
