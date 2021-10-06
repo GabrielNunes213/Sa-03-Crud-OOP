@@ -1,5 +1,5 @@
 <?php
-    require_once 'Especialidade.php';
+    require_once 'C:\xampp\htdocs\AtivsPHP\TII2002T-03\Gabriel\SA-03-CRUD-OOP\Especialidade\Especialidade.php';
     $e = new Especialidade();
 ?>
 
@@ -10,26 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Especialidade</title>
-    <style>
-        p {
-            font-size: 22px;
-        }
-
-        #botaocadastrar {
-            background-color: #D3D3D3;
-            border-radius: 10px;
-            width: 130px;
-            height: 28px;
-            font-size: 15px;
-        }
-
-        input {
-            text-align: center;
-            width: 180px;
-            height: 25px;
-            font-size: 15px;
-        }
-    </style>
+    <link  rel="stylesheet" href="CadastroEspecialidade.css">
 </head>
 <body>
 
@@ -47,11 +28,13 @@
       
     <?php
         if(isset($_POST['nomeE'])){
-        $nome_especialidade = addslashes($_POST['nomeE']);
-
+            
+        $nome_esp = addslashes($_POST['nomeE']);
+        
         $e->conexao("localhost","banco_Sa_03","root","");
-
-        $e->cadastrar($nome_especialidade);
+        
+        $e->cadastrar($nome_esp);
+        
         }
     
     ?>
