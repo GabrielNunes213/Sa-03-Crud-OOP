@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Médico</title>
     <link rel="stylesheet" href="AtualizarMedico.css">
+
+    <script src="../Script/Jquery.js"></script>
+    <script src="../Script/JqueryMask.js"></script>
+    <script src="../Script/Popper.js"></script>
 </head>
 <body>
 
@@ -22,16 +26,16 @@
 
     <form method="post">
     <p>ID Médico</p> <input type="text" name="idmd" placeholder="Digite o ID" required><br>
-    <p>Nome</p> <input type="text" name="nome" placeholder="Digite o Nome"><br>
-    <p>Rua</p><input type="text" name="rua" placeholder="Digite a Rua"><br>
+    <p>Nome</p> <input type="text" name="nome" placeholder="Digite o Nome" minlenght="1" maxlength="100"><br>
+    <p>Rua</p><input type="text" name="rua" placeholder="Digite a Rua" minlenght="1" maxlength="100"><br>
     <p>Número</p><input type="number" name="numerorua" placeholder="N° Casa/Apartamento"><br>
-    <p>Bairro</p><input type="text" name="bairro" placeholder="Digite o Bairro"><br>
-    <p>Cep</p><input type="text" name="cep" placeholder="Digite o CEP"><br>
-    <p>Complemento</p><input type="text" name="complemento" placeholder="Complemento"><br>
-    <p>Email</p><input type="email" name="email" placeholder="Digite o E-mail"><br>
-    <p>Celular</p><input type="tel" name="celular" placeholder="Digite o Celular"><br>
-    <p>Telefone Fixo</p><input type="tel" name="telefonefixo" placeholder="Telefone Fixo"><br>
-    <p>Telefone Secundario</p><input type="tel" name="telefonesecundario" placeholder="Telefone Secundario"><br><br>
+    <p>Bairro</p><input type="text" name="bairro" placeholder="Digite o Bairro" minlenght="1" maxlength="50"><br>
+    <p>Cep</p><input type="text" name="cep" placeholder="Digite o CEP" minlenght="10" maxlength="10"  onkeypress="$(this).mask('00.000-000')"><br>
+    <p>Complemento</p><input type="text" name="complemento" placeholder="Complemento"  minlenght="1" maxlength="60"><br>
+    <p>Email</p><input type="email" name="email" placeholder="Digite o E-mail" minlenght="10" maxlength="80"><br>
+    <p>Celular</p><input type="tel" name="celular" placeholder="Digite o Celular" minlenght="15" maxlength="15" onkeypress="$(this).mask('(00) 90000-0000')"><br>
+    <p>Telefone Fixo</p><input type="tel" name="telefonefixo" placeholder="Telefone Fixo" minlenght="14" maxlength="14" onkeypress="$(this).mask('(00) 0000-0000')"><br>
+    <p>Telefone Secundario</p><input type="tel" name="telefonesecundario" placeholder="Telefone Secundario" minlenght="14" maxlength="14" onkeypress="$(this).mask('(00) 0000-0000')"><br><br>
 
     <input id="botaoatualizarmedico" type="submit" value="Atualizar Médico">
     </form>

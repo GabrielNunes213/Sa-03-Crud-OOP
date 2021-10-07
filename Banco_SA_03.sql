@@ -17,8 +17,8 @@ cep CHAR(9),
 complemento VARCHAR(30),
 email VARCHAR(40),
 celular CHAR(15),
-telefonefixo BIGINT(15),
-telefonesecundario BIGINT(15)
+telefonefixo CHAR(14),
+telefonesecundario CHAR(14)
 );
 
 CREATE TABLE Procedimento (
