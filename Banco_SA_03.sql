@@ -21,5 +21,16 @@ telefonefixo BIGINT(15),
 telefonesecundario BIGINT(15)
 );
 
+CREATE TABLE Procedimento (
+id_procedimento INT NOT NULL AUTO_INCREMENT,
+codigo INT NOT NULL,
+nomeproc VARCHAR(30),
+valor DECIMAL,
+genero VARCHAR(35),
+addexcecao VARCHAR(40),
+PRIMARY KEY (id_procedimento, codigo)
+);
+
 SELECT * FROM Especialidade;
 SELECT * FROM Medico;
+SELECT * FROM Procedimento;
