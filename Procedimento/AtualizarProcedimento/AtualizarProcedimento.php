@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Procedimento</title>
     <link rel="stylesheet" href="AtualizarProcedimento.css">
+
+    <script src="../Script/Jquery.js"></script>
+    <script src="../Script/JqueryMask.js"></script>
+    <script src="../Script/Popper.js"></script>
 </head>
 <body>
 
@@ -28,7 +32,7 @@
 
     <p>Nome</p><input type="text" name="nomeproc" placeholder="Nome Procedimento"><br>
 
-    <p>Valor</p><input type="text" name="valor" placeholder="Digite o Valor"><br>
+    <p>Valor</p><input type="text" name="valor" placeholder="Digite o Valor" onkeypress="$(this).mask('#.##0.00', {reverse: true});"><br>
 
     <p>Gênero</p><input type="text" name="genero" placeholder="Digite o Gênero"><br>
    

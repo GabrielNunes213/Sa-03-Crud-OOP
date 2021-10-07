@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Procedimento</title>
     <link rel="stylesheet" href="CadastroProcedimento.css">
+
+    <script src="../Script/Jquery.js"></script>
+    <script src="../Script/JqueryMask.js"></script>
+    <script src="../Script/Popper.js"></script>
 </head>
 <body>
 
@@ -23,7 +27,7 @@
 
     <p>Nome</p><input type="text" name="nomeproc" placeholder="Digite o Nome" required><br>
 
-    <p>Valor</p><input type="text" name="valor" placeholder="Digite o Valor" required><br>
+    <p>Valor</p><input type="text" name="valor" placeholder="Digite o Valor" onkeypress="$(this).mask('#.##0.00', {reverse: true});" required><br>
 
     <p>Gênero</p><input type="text" name="genero" placeholder="Digite o Gênero" required><br>
    

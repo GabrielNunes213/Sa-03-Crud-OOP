@@ -25,7 +25,7 @@ CREATE TABLE Procedimento (
 id_procedimento INT NOT NULL AUTO_INCREMENT,
 codigo INT NOT NULL,
 nomeproc VARCHAR(30),
-valor DECIMAL,
+valor FLOAT,
 genero VARCHAR(35),
 addexcecao VARCHAR(40),
 PRIMARY KEY (id_procedimento, codigo)
@@ -34,3 +34,5 @@ PRIMARY KEY (id_procedimento, codigo)
 SELECT * FROM Especialidade;
 SELECT * FROM Medico;
 SELECT * FROM Procedimento;
+
+#DROP DATABASE banco_SA_03;
