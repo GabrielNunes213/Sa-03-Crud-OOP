@@ -11,21 +11,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Especialidade</title>
     <link  rel="stylesheet" href="AtualizarEspecialidade.css">
+    <link href="../Navbar/font.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../Navbar/Materialize.css">
 </head>
 <body>
 
-    <center>
+    
+<nav>
+     <div class="nav-wrapper">
+         <a href="#" class="brand-logo">Stetic Center</a>
+         <a href="#" data-activates="menu-mobile" class="button-collapse">
+             <i class="material-icons">menu</i>
+         </a>
+         <ul class="right hide-on-med-and-down">
+             <li><a href="../../index.php">Início</a></li>
+             <li><a href="../TabelaEspecialidade/TabelaEspecialidade.php">Tabela Especialidade</a></li>
+         </ul>
+         <ul class="side-nav" id="menu-mobile">
+             <li><a href="../../index.php">Início</a></li>
+             <li><a href="../TabelaEspecialidade/TabelaEspecialidade.php">Tabela Especialidade</a></li>
+         </ul>
+     </div>
+ </nav>
 
-    <h2>Atualizar Especialidade</h2>
-    <h3>Escreva apenas nos campos que você deseja atualizar, deixe os outros vazios.</h3>
-    <h3>Obrigatorio Colocar o ID para identificação</h3>
+
+
+    <h2 id="titulo">Atualizar Especialidade</h2>
+    <h3 class="subtitulo">Escreva apenas nos campos que você deseja atualizar, deixe os outros vazios.</h3>
+    <h3 class="subtitulo">Obrigatorio Colocar o ID para identificação</h3>
     <form  method="post">
+        <div id="inputid">
         <p>ID Especialidade</p><input type="number" name="idesp" placeholder="Digite o ID" required><br><br>
+        </div>
+
+        <div id="inputnome">
         <p>Nome Especialidade</p><input type="text" name="nomeEsp" placeholder="Nome da Especialidade"><br><br>
+        </div>
+
+        <div id="botaoatu">
         <input id="botaoatualizar" type="submit" value="Atualizar Especialidade">
+        </div>
     </form>
 
-    </center>
+    
+    <script src="../Navbar/Jquery.js"></script>
+    <script src="../Navbar/Materialize.js"></script>
+    <script>
+    $(function(){
+        $(".button-collapse").sideNav();});
+    </script>
+
 
     <?php
     
@@ -35,7 +70,7 @@
         $NomeEsp = addslashes($_POST['nomeEsp']);
 
         
-        $e->conexao("localhost","banco_Sa_03","root","");
+        $e->conexao();
         
         $e->atualizar($idEsp,$NomeEsp);
         

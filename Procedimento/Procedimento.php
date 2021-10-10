@@ -3,7 +3,12 @@
     class Procedimento {
         private $pdo;
 
-        public function conexao($host, $dbname, $user, $senha){
+        public function conexao(){
+        $host = "localhost";
+        $dbname = "banco_Sa_03";
+        $user = "root";
+        $senha = "";
+
             try{
                 $this->pdo = new PDO("mysql:host=".$host.";dbname=".$dbname,$user,$senha);
             }
@@ -23,7 +28,7 @@
             $con->execute();
     
             if($con->rowCount() > 0){ 
-                echo "Este Codigo ja está cadastrado";
+                echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Este Codigo ja está cadastrado</div>";
             } else {
             $con = $this->pdo->prepare("INSERT INTO Procedimento (codigo,nomeproc,valor,genero,addexcecao) VALUES (:co,:np,:v,:g,:ex)");
             $con->bindValue(":co",$codigo);
@@ -33,7 +38,7 @@
             $con->bindValue(":ex",$excecao);
             $con->execute();
 
-            echo "Cadastro Realizado com Sucesso!";
+            echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Cadastro Realizado com Sucesso!</div>";
             }
         }
 
@@ -45,7 +50,7 @@
             $con->execute();
     
             if($con->rowCount() > 0){ 
-                echo "Este Codigo ja está cadastrado";
+                echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Este Codigo ja está cadastrado</div>";
             } else {
             if(!empty($codigo)){
                 $con = $this->pdo->prepare("UPDATE Procedimento SET codigo = :co WHERE id_procedimento = :id");
@@ -92,7 +97,7 @@
                 $con->bindValue(":id",$idProc);
                 $con->execute();
     
-                echo "ID ". $idProc ." Deletado com Sucesso!";
+                echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>ID ". $idProc ." Deletado com Sucesso!</div>";
             }
         }
 

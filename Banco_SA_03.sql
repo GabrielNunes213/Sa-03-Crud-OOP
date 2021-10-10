@@ -26,7 +26,7 @@ id_procedimento INT NOT NULL AUTO_INCREMENT,
 codigo INT NOT NULL,
 nomeproc VARCHAR(30),
 valor FLOAT,
-genero VARCHAR(35),
+genero VARCHAR(10),
 addexcecao VARCHAR(40),
 PRIMARY KEY (id_procedimento, codigo)
 );

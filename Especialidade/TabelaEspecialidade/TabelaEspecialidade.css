@@ -2,14 +2,47 @@ a {
     text-decoration: none;
     color: black;
     font-size: 20px; 
+    width: 250px;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 button {
     background-color: #D3D3D3;
     border-radius: 10px;
     width: 250px;
+    display: flex;
+}
+
+#botcad {
+    margin-top: 40px;
+}
+
+#botdel {
+    margin-top: 20px;
+}
+
+#botatu {
+    margin-top: 20px;
+}
+
+#botvoltar {
+    margin-top: 25px;
+}
+
+#centralizarbotoes {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titulo {
     text-align: center;
 }

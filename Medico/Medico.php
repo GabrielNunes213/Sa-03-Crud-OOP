@@ -3,7 +3,12 @@
     class Medico {
         private $pdo;
 
-        public function conexaoM($host, $dbname, $user, $senha){
+        public function conexaoM(){
+        $host = "localhost";
+        $dbname = "banco_Sa_03";
+        $user = "root";
+        $senha = "";
+
             try{
                 $this->pdo = new PDO("mysql:host=".$host.";dbname=".$dbname,$user,$senha);
             }
@@ -24,7 +29,7 @@
         $con->execute();
 
         if($con->rowCount() > 0){ 
-            echo "Este Medico ja está cadastrado";
+            echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Este Medico ja está cadastrado</div>";
         } else {
         $con = $this->pdo->prepare("INSERT INTO Medico (nome,rua,numero,bairro,cep,complemento,email,celular,telefonefixo,telefonesecundario) VALUES (:n,:rua,:num,:bai,:cep,:comp,:email,:cel,:telefix,:telesec)");
         $con->bindValue(":n",$nome);
@@ -114,7 +119,7 @@
             }
 
             if(empty($nome) and empty($rua) and empty($numeroR) and empty($bairro) and empty($cep) and empty($complemento) and empty($email) and empty($celular) and empty($telefonefix) and empty($telefonesecundario)){
-               echo "Os campos estão todos vazios, nada foi atualizado."; 
+               echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Os campos estão todos vazios, nada foi atualizado.</div>"; 
             }            
         }
 
@@ -126,7 +131,7 @@
                 $con->bindValue(":id",$id);
                 $con->execute();
     
-                echo "ID ". $id ." Deletado com Sucesso!";
+                echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>ID ". $id ." Deletado com Sucesso!</div>";
             }
         }
 

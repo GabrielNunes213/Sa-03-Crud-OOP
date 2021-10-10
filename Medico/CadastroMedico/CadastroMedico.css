@@ -1,5 +1,43 @@
 p {
     font-size: 20px;
+    text-align: center;
+    padding-left: 70px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#rua {
+    padding-left: 77px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#complemento {
+    padding-left: 35px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#numero {
+    padding-left: 60px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#telefixo {
+    padding-left: 40px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#telesec {
+    padding-left: 25px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#titulo {
+    text-align: center;
 }
 
 #botaocadmedico {
@@ -8,6 +46,73 @@ p {
     width: 135px;
     height: 28px;
     font-size: 15px;
+}
+
+#inputnome {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputrua {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputnumero {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputbairro {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputcep {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputcomplemento {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputemail {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputcelular {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputtelefonefix {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputtelefonesec {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botaocad {
+    width: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 input {

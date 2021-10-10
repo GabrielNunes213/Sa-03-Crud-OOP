@@ -14,9 +14,8 @@
 </head>
 <body>
     
-        <center>
 
-    <h2>Tabela Procedimento</h2>
+    <h2 id="titulo">Tabela Procedimento</h2>
     <table width="467" border="1px">
         <tr>
             <td>ID Procedimento</td>
@@ -29,7 +28,7 @@
 
         <?php
 
-            $p->conexao("localhost","banco_Sa_03","root","");
+            $p->conexao();
 
             $p->TabelaProcedimento();
             
@@ -37,16 +36,16 @@
         
         
     </table>
-    <br><br>
-    <button><a href="../CadastroProcedimento/CadastroProcedimento.php">Cadastrar Procedimento</a></button>
-    <br>
-    <br>
-    <button><a href="../DeletarProcedimento/DeletarProcedimento.php">Apagar Procedimento</a></button>
-    <br>
-    <br>
-    <button><a href="../AtualizarProcedimento/AtualizarProcedimento.php">Atualizar Procedimento</a></button>
+    
+    <div id="centralizarbotoes">
+    <button id="botcad"><a href="../CadastroProcedimento/CadastroProcedimento.php">Cadastrar Procedimento</a></button>
+    
+    <button id="botdel"><a href="../DeletarProcedimento/DeletarProcedimento.php">Apagar Procedimento</a></button>
+    
+    <button id="botatu"><a href="../AtualizarProcedimento/AtualizarProcedimento.php">Atualizar Procedimento</a></button>
 
-    </center>
+    <button id="botaovoltar"><a href="../../index.php">Voltar Início</a></button>
+    </div>
 
 </body>
 </html>

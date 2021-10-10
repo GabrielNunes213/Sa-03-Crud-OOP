@@ -1,5 +1,14 @@
 p {
     font-size: 22px;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
 }
 
 #botaoatualizar {
@@ -8,6 +17,24 @@ p {
     width: 170px;
     height: 28px;
     font-size: 15px;
+}
+
+#inputid {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputnome {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botaoatu {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {

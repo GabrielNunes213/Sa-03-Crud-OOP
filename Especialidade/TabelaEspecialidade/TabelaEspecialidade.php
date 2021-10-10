@@ -14,8 +14,8 @@
 </head>
 <body>
     
-    <center>
-    <h2>Tabela Especialidade</h2>
+   
+    <h2 id="titulo">Tabela Especialidade</h2>
     <table width="467" border="1px">
         <tr>
             <td>ID Especialidade</td>
@@ -24,7 +24,7 @@
 
         <?php
 
-            $e->conexao("localhost","banco_Sa_03","root","");
+            $e->conexao();
            
             $e->TabelaEsp();
             
@@ -32,16 +32,17 @@
         
         
     </table>
-    <br><br>
-    <button><a href="../CadastroEspecialidade/CadastroEspecialidade.php">Cadastrar Especialidade</a></button>
-    <br>
-    <br>
-    <button><a href="../DeletarEspecialidade/DeletarEspecialidade.php">Apagar Especialidade</a></button>
-    <br>
-    <br>
-    <button><a href="../AtualizarEspecialidade/AtualizarEspecialidade.php">Atualizar Especialidade</a></button>
-
-    </center>
+    
+    <div id="centralizarbotoes">
+    <button id="botcad"><a href="../CadastroEspecialidade/CadastroEspecialidade.php">Cadastrar Especialidade</a></button>
+    
+    <button id="botdel"><a href="../DeletarEspecialidade/DeletarEspecialidade.php">Apagar Especialidade</a></button>
+    
+    <button id="botatu"><a href="../AtualizarEspecialidade/AtualizarEspecialidade.php">Atualizar Especialidade</a></button>
+    
+    <button id="botvoltar"><a href="../../index.php">Voltar Início</a></button>
+    </div>
+        
 
 </body>
 </html>

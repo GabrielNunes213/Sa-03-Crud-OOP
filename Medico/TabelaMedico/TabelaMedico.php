@@ -14,9 +14,7 @@
 </head>
 <body>
     
-    <center>
-
-    <h2>Tabela Medicos</h2>
+    <h2 id="titulo">Tabela Medicos</h2>
     
     <table width="467" border="1px">
         <tr>
@@ -35,7 +33,7 @@
 
         <?php
             
-            $m->conexaoM("localhost","banco_Sa_03","root","");
+            $m->conexaoM();
 
             $m->TabelaMedico();
             
@@ -43,16 +41,17 @@
         
         
     </table>
-    <br><br>
-    <button><a href="../CadastroMedico/CadastroMedico.php">Cadastrar Medico</a></button>
-    <br>
-    <br>
-    <button><a href="../DeletarMedico/DeletarMedico.php">Apagar Medico</a></button>
-    <br>
-    <br>
-    <button><a href="../AtualizarMedico/AtualizarMedico.php">Atualizar Medico</a></button>
+    
+    <div id="centralizarbotoes">
+    <button id="botcad"><a href="../CadastroMedico/CadastroMedico.php">Cadastrar Medico</a></button>
+    
+    <button id="botdel"><a href="../DeletarMedico/DeletarMedico.php">Apagar Medico</a></button>
+    
+    <button id="botatu"><a href="../AtualizarMedico/AtualizarMedico.php">Atualizar Medico</a></button>
 
-    </center>
+    <button id="botvoltar"><a href="../../index.php">Voltar Início</a></button>
+
+    </div>
 
 </body>
 </html>

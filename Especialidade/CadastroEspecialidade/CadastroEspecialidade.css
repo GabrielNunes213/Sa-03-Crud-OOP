@@ -1,5 +1,10 @@
 p {
     font-size: 22px;
+    text-align: center;
+}
+
+#titulo {
+    text-align: center;
 }
 
 #botaocadastrar {
@@ -8,6 +13,20 @@ p {
     width: 130px;
     height: 28px;
     font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputesp {
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botcadastrar {
+    width: 135px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {

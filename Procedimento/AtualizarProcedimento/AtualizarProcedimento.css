@@ -1,5 +1,94 @@
 p {
     font-size: 20px;
+    text-align: center;
+}
+
+#id {
+    padding-left: 20px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#codigo {
+    padding-left: 55px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#nome {
+    padding-left: 60px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#valor {
+    padding-left: 60px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#genero {
+    padding-left: 50px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#excecao {
+    padding-left: 12px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#titulo {
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+#inputid {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputcodigo {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputnome {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputvalor {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputgenero {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputexcecao {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botatu {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 #botaoatualizarprocedimento {

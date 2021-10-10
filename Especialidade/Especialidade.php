@@ -3,7 +3,13 @@
     class Especialidade {
         private $pdo;
    
-    public function conexao($host, $dbname, $user, $senha){
+    public function conexao(){
+        $host = "localhost";
+        $dbname = "banco_Sa_03";
+        $user = "root";
+        $senha = "";
+
+
     try{
         $this->pdo = new PDO("mysql:host=".$host.";dbname=".$dbname,$user,$senha);
     }
@@ -23,7 +29,7 @@
         $con->execute();
 
         if($con->rowCount() > 0){ 
-            echo "Esta especialidade ja está cadastrada";
+            echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Esta especialidade ja está cadastrada</div>";
         } else {
         $con = $this->pdo->prepare("INSERT INTO Especialidade (nome_especialidade) VALUES (:ne)");
         $con->bindValue(":ne",$nome_especialidade);
@@ -41,7 +47,7 @@
         $con->bindValue(":id",$idEsp);
         $con->execute();
 
-        echo "Atualizado com sucesso!";
+        echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>Atualizado com sucesso!</div>";
         }
     }
 
@@ -53,7 +59,7 @@
             $con->bindValue(":id",$idEsp);
             $con->execute();
 
-            echo "ID ". $idEsp ." Deletado com Sucesso!";
+            echo "<div style='font-size: 18px;text-align: center; margin-top: 30px;'>ID ". $idEsp ." Deletado com Sucesso!</div>";
         }
     }
 
