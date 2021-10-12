@@ -1,11 +1,20 @@
 CREATE DATABASE banco_Sa_03;
 
+#SELECT @@autocommit;
+ 
+ SET @@autocommit = OFF;
+
+
 USE	banco_Sa_03;
+
+START TRANSACTION;
 
 CREATE TABLE Especialidade (
 id_especialidade INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
 nome_especialidade VARCHAR(45)
 );
+
+SAVEPOINT tabela_especialidade;
 
 CREATE TABLE Medico (
 id_medico INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
@@ -21,6 +30,8 @@ telefonefixo CHAR(14),
 telefonesecundario CHAR(14)
 );
 
+SAVEPOINT tabela_medico;
+
 CREATE TABLE Procedimento (
 id_procedimento INT NOT NULL AUTO_INCREMENT,
 codigo INT NOT NULL,
@@ -30,6 +41,14 @@ genero VARCHAR(10),
 addexcecao VARCHAR(40),
 PRIMARY KEY (id_procedimento, codigo)
 );
+
+SAVEPOINT tabela_procedimento;
+
+DELETE FROM Especialidade WHERE id_especialidade = 1;
+
+ROLLBACK TO tabela_procedimento;
+
+COMMIT;
 
 SELECT * FROM Especialidade;
 SELECT * FROM Medico;
