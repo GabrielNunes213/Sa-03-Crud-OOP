@@ -50,6 +50,31 @@ ROLLBACK TO tabela_procedimento;
 
 COMMIT;
 
+CREATE USER 'usuario_especialidade'@'localhost' 
+IDENTIFIED BY 'usuario';
+
+GRANT SELECT 
+ON banco_SA_03.Especialidade
+TO 'usuario_especialidade'@'localhost';
+
+#---------------------------------------------
+
+CREATE USER 'usuario_medico'@'localhost' 
+IDENTIFIED BY 'usuario';
+
+GRANT SELECT 
+ON banco_SA_03.Medico
+TO 'usuario_medico'@'localhost';
+
+#---------------------------------------------
+
+CREATE USER 'usuario_procedimento'@'localhost' 
+IDENTIFIED BY 'usuario';
+
+GRANT SELECT 
+ON banco_SA_03.Procedimento
+TO 'usuario_procedimento'@'localhost';
+
 SELECT * FROM Especialidade;
 SELECT * FROM Medico;
 SELECT * FROM Procedimento;
