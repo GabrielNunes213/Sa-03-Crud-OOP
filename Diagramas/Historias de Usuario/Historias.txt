@@ -1,0 +1,17 @@
+1-Como Gerente, gostaria de cadastrar, atualizar e apagar  
+um novo procedimento disponibilizado para os pacientes 
+da stetic center .
+
+
+2-Como Gerente, gostaria de cadastrar, atualizar e apagar 
+especialidades de cada médico da stetic center.
+
+
+3-Como medico gostaria que todos os medicos tivessem 
+seus cadastros como cpf, telefone, bairro para caso aconteca
+alguma coisa e precisarmos contata-los.
+
+
+4-Como medico acredito que seria importante ter o registro de todos 
+os medicos, indicando a funcao que ele executa, para assim encontrar 
+o medico mais indicado para cada paciente.
